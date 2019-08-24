@@ -21,9 +21,7 @@ public class JstlStudyController {
     public String index(HttpServletRequest request) {
 
         ArrayList<AudienceRatingDto> result = dbMockService.read();
-
         request.setAttribute("audienceRatingDtoList", result);
-
         return "AudienceRating";
     }
 }
