@@ -5,7 +5,7 @@ public class ContactDto {
     private String content;
     private String ungency;
     private String limit;
-    private String drrafter;
+    private String drafter;
     private String status;
     private String responser;
     private String category;
@@ -31,7 +31,14 @@ public class ContactDto {
     }
 
     public void setUngency(String ungency) {
-        this.ungency = ungency;
+        if (ungency == "0") {
+            this.ungency = "低";
+        } else if (ungency == "1") {
+            this.ungency = "中";
+        } else if (ungency == "2") {
+            this.ungency = "高";
+        }
+
     }
 
     public String getLimit() {
@@ -42,12 +49,12 @@ public class ContactDto {
         this.limit = limit;
     }
 
-    public String getDrrafter() {
-        return drrafter;
+    public String getDrafter() {
+        return drafter;
     }
 
-    public void setDrrafter(String drrafter) {
-        this.drrafter = drrafter;
+    public void setDrafter(String drafter) {
+        this.drafter = drafter;
     }
 
     public String getStatus() {
@@ -55,7 +62,13 @@ public class ContactDto {
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        if (status == "0") {
+            this.status = "対応中";
+        } else if (status == "1") {
+            this.status = "完了";
+        } else if (status == "2") {
+            this.status = "取下";
+        }
     }
 
     public String getResponser() {
@@ -71,7 +84,11 @@ public class ContactDto {
     }
 
     public void setCategory(String category) {
-        this.category = category;
+        if (category == "0") {
+            this.category = "ネットワーク";
+        } else if (category == "1") {
+            this.category = "アプリ";
+        }
     }
 
 }
