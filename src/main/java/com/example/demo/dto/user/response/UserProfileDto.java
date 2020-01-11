@@ -1,31 +1,27 @@
-package com.example.demo.dto;
+package com.example.demo.dto.user.response;
 
-public class UserDto {
+public class UserProfileDto {
 
-    private String name;
-    private String tel;
+    private String userId;
     private String mail;
+    private String name;
 
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
     public String getMail() {
         return mail;
     }
-
     public void setMail(String mail) {
         this.mail = mail;
     }

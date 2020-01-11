@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +15,8 @@
  <p>name: ${requestScope.userDto.name}</p>
  <p>mail: ${requestScope.userDto.mail}</p>
  <p>tel: ${requestScope.userDto.tel}</p>
- <c:if test="${requestScope.dispFlg}">${requestScope.dispFlg }</c:if>
+
+ <c:if test="${requestScope.display != ''}">${requestScope.display }</c:if>
 
  <section>
   <h3>getサンプル</h3>

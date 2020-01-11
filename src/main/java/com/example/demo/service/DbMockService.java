@@ -1,15 +1,13 @@
 package com.example.demo.service;
 
 import java.util.ArrayList;
-
 import org.springframework.stereotype.Service;
-
 import com.example.demo.dto.AudienceRatingDto;
 
 @Service
 public class DbMockService {
 
-    public ArrayList<AudienceRatingDto> read() {
+    public void read() {
 
         ArrayList<AudienceRatingDto> resList = new ArrayList<AudienceRatingDto>();
 

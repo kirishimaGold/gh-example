@@ -23,17 +23,5 @@
    </c:if>
   </div>
  </c:forEach>
- <style>
-.table {
-  display: table;
-}
-
-.cell {
-  display: table-cell;
-  padding: 2px 10px;
-}
-</style>
-
-
 </body>
 </html>

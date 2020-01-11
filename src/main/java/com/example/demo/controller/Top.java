@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +31,9 @@ public class Top {
 
         request.setAttribute("userDto", userDto);
 
-        request.setAttribute("dispFlg", true);
+        request.setAttribute("display", "テスト");
         return "Top";
     }
 
 }
+

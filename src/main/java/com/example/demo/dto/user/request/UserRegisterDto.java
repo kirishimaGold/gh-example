@@ -1,33 +1,23 @@
-package com.example.demo.dto;
+package com.example.demo.dto.user.request;
 
-public class UserDto {
+public class UserRegisterDto {
 
-    private String name;
-    private String tel;
     private String mail;
+    private String name;
+
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
     public String getMail() {
         return mail;
     }
-
     public void setMail(String mail) {
         this.mail = mail;
     }
+
 
 }
