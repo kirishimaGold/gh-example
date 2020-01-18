@@ -1,0 +1,115 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 80px;
+  background: #f5fcff;
+  padding: 5px;
+}
+
+.top-container {
+  text-align: center;
+}
+
+.top-container .top-title {
+  height: 700px;
+  background-image: url(./../img/top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: green;
+  font-size: 2em;
+}
+
+.top-container .top-title>div {
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 700px;
+}
+
+.top-title-text {
+  margin: 0 15%;
+}
+
+.top-container .top-title h2 {
+  margin: 7%;
+  padding-top: 300px;
+}
+
+.top-message {
+  background: #a82f35;
+  padding: 5% 20%;
+  font-weight: bold;
+}
+
+.entertainment-title {
+  background: #3b652b;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 0px 0px 5px #3b652b;
+  border: dashed 2px #659054;
+  border-radius: 10px;
+  padding: 0.2em 0.5em 0.4em 0.5em;
+  margin: 30px 20%;
+}
+
+.entertainment-title h2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.entertainment-table {
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.entertainment-cell {
+  display: table-cell;
+  width: 33%
+}
+
+.entertainment-cell>div {
+  margin: 10%;
+  padding-top: 5%;
+  border-radius: 15px;
+  background: #feee89;
+  border: 2px solid #a78d46;
+}
+
+.entertainment-cell img {
+  width: 90%;
+}
+
+.entertainment-text {
+  min-height: 60px;
+}
+
+.entertainment-text p {
+  padding: 0 5px;
+  color: #5e4803;
+}
+
+a.nomarl{
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover{
+   opacity: 0.6;
+}
+.white {
+  color: white;
+}
+
+.lightgreen {
+  color: #f6ebaf;
+}
+
+big {
+  font-size: 2.0em;
+}

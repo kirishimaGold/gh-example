@@ -62,7 +62,7 @@ public class DbMockService {
             resList.add(audienceRatingDto);
         }
 
-        return resList;
+
     }
 
 }

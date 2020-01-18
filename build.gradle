@@ -22,5 +22,4 @@ dependencies(){
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
     compile('org.apache.tomcat.embed:tomcat-embed-jasper:9.0.16')
-    compile group: 'commons-collections',name: 'commons-collections',version: '3.2'
 }
