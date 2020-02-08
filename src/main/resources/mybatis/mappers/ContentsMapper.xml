@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.ContentsMapper">
+  <insert id="create" parameterType="com.example.demo.dto.contents.request.PostContentsDto">
+    INSERT INTO
+        contents(title, image_file_name)
+    VALUES(
+        #{dto.title},
+        #{dto.imageFileName}
+    )
+  </insert>
+</mapper>
